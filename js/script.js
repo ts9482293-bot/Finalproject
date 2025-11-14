@@ -11,6 +11,10 @@ var swiper = new Swiper(".myswiper", {
     var swiper2 = new Swiper(".testimonial-swiper",{
         slidesPerView: 1,
         loop:true,
+        autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
        pagination: {
         el: ".swiper-pagination",
         dynamicBullets: true,

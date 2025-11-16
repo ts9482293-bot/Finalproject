@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Final Project</title>
+     <!-- Aos-cdn -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- fontaswome-cdn -->
     <link
       rel="stylesheet"
@@ -11,6 +13,11 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+     <!-- fancybox-css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
     <!-- Bootsrap-css -->
     <link
@@ -92,7 +99,7 @@
               experiences, it's at the heart of how we live and work.
             </p>
             <div class="banner-btn">
-              <a href="" class="home-btn"> Home/About </a>
+              <a href="index.html" class="home-btn"> Home/About </a>
             </div>
           </div>
         </div>
@@ -651,8 +658,13 @@
             <div class="work-btn-cont">
               <div class="work-btn">
                 <a href="" class="started-btn"> Get Started </a>
-                <a href="" class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                 <a
+                  data-fancybox
+                  data-src="https://www.youtube.com/embed/6nDmtt1I4TY?si=uJmvOcu582_jHb1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"
+                  class="video-btn play-btn"
+                >
+                 <i class="fa-solid fa-play"></i>
+                 
                 </a>
               </div>
               <p>How It Works</p>
@@ -798,7 +810,11 @@
   </div>
       </div>
     </footer>
+    <!-- Aos-js -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- Bootsrtap-js -->
+     <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"

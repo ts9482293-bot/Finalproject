@@ -35,6 +35,26 @@ a{
 ul{
     list-style-type: none;
 }
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-timing-function: ease-in-out;
+}
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+}
+[data-aos="fade-up"] {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+[data-aos] {
+  transition-timing-function: ease-out;
+}
 .us-row{
     align-items: center !important;
 }
@@ -158,6 +178,9 @@ ul{
     max-width: 77px;
     color: var(--text-color);
 }
+.primary-btn:hover{
+  color: var(--primary-color);
+}
 .secondary-btn{
     padding: 15.5px 33.5px;
     border-radius: 30px;
@@ -236,17 +259,34 @@ nav{
     border-radius: 30px;
     background: var(--primary-color);
     color: var(--text-color);
-    
+    transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+.get-btn::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--crd-color);
+  transition: 0.4s ease;
+  color: var(--text-color);
+  z-index: 1;
+}
+.get-btn>span{
+  position: relative;
+  z-index: 2;
 }
 .price-btn{
     color: var(--text-color);
     max-width: 150px;
     padding-left: 20px ;
 }
-.get-btn:hover{
-    background: var(--text-color);
-    color: var(--primary-color);
-    outline: 1px solid var(--primary-color);
+.get-btn:hover::before{
+    left: 0;
 }
 .scroll-btn{
     height: 184px;
@@ -393,8 +433,8 @@ animation: waveFloat 5s ease-in-out infinite;
 }
 .about-img::before{
     content: '';
-    width: 180px;
-    height: 103px;
+    width: 200px;
+    height: 110px;
     background:#2a166a;
     position: absolute;
     bottom: 75.5%;
@@ -410,7 +450,7 @@ animation: waveFloat 5s ease-in-out infinite;
     box-shadow: 0 -35px 0  #2a166a;
 }
 .corner1{
-    bottom: 58.2%;
+    bottom: 62%;
     right: 94%;
 }
 .about-img>img{
@@ -514,6 +554,7 @@ animation: waveFloat 5s ease-in-out infinite;
   border-radius: 57.33px;
   outline: 1px solid var(--text-color);
   margin: 6px 0;
+  height: 397px;
 }
 .card-img{
     width: 91.76px;
@@ -558,6 +599,64 @@ animation: waveFloat 5s ease-in-out infinite;
     color: var(--primary-color);
     outline: 1px solid var(--primary-color);
 }
+ .flip-inner {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: flipAnim 4s infinite ease-in-out;
+    }
+
+    /* Keyframes for Auto Flip */
+    @keyframes flipAnim {
+      0% {
+        transform: rotateY(0deg);
+      }
+      50% {
+        transform: rotateY(180deg);
+      }
+      100% {
+        transform: rotateY(360deg);
+      }
+    }
+
+    /* Both Front & Back */
+    .flip-front,
+    .flip-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 14px;
+      padding: 25px;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    /* Front Side */
+   
+
+    /* Back Side */
+    .flip-back {
+      background: #7620C2;
+      transform: rotateY(180deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .flip-back h3 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    .flip-back p {
+      font-size: 16px;
+      text-align: center;
+      width: 80%;
+    }
 /* work-sec */
 .work-sec{
   background: url(../images/07.png)no-repeat center/cover;
@@ -597,11 +696,29 @@ animation: waveFloat 5s ease-in-out infinite;
     border-radius: 35.81px;
     background: var(--primary-color);
     color: var(--text-color);
+ transition: 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
-.started-btn:hover{
-    background: var(--text-color);
-    color: var(--primary-color);
-    outline: 1px solid var(--primary-color);
+.started-btn::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--crd-color);
+  transition: 0.4s ease;
+  color: var(--text-color);
+  z-index: 1;
+}
+.started-btn>span{
+  position: relative;
+  z-index: 2;
+}
+.started-btn:hover::before{
+  left: 0;
 }
 .play-btn{
     width: 59.58px;
@@ -860,10 +977,10 @@ animation: waveFloat 5s ease-in-out infinite;
     position: relative;
      animation: rotateCircle 20s linear infinite;
 }
-@keyframes rotateCircle {
+/* @keyframes rotateCircle {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
+} */
 .circle-img-one{
     width: 120px;
     height: 120px;
@@ -1376,6 +1493,28 @@ animation: waveFloat 5s ease-in-out infinite;
 .testimonial-img{
   margin: 0 auto;
 }
+.about-img::before{
+    content: '';
+    width: 250px;
+    height: 130px;
+    background:#2a166a;
+    position: absolute;
+    bottom: 75.5%;
+    right: 65%;
+    border-bottom-right-radius: 85px;
+}
+.corner{
+    width: 50px;
+    height: 55px;
+   border-top-left-radius: 80px;
+    background: transparent;
+    position: absolute;
+    box-shadow: 0 -35px 0  #2a166a;
+}
+.corner1{
+    bottom: 64%;
+    right: 94%;
+}
 }
 
 /*  (max-width: 992px) */
@@ -1597,10 +1736,7 @@ animation: waveFloat 5s ease-in-out infinite;
     margin: 0 auto;
   }
 
-  .about-img::before,
-  .corner1 {
-    display: none;   /* Shapes removed for clean mobile layout */
-  }
+ 
 }
 @media screen and (max-width:880px){
    .email-icon{
@@ -1739,8 +1875,27 @@ animation: waveFloat 5s ease-in-out infinite;
 .testimonial-swiper{
   height: 100vh;
 }
-.swiper-pagination{
-
+.about-img::before{
+    content: '';
+    width: 250px;
+    height: 160px;
+    background:#2a166a;
+    position: absolute;
+    bottom: 75.5%;
+    right: 65%;
+    border-bottom-right-radius: 85px;
+}
+.corner{
+    width: 40px;
+    height: 55px;
+   border-top-left-radius: 80px;
+    background: transparent;
+    position: absolute;
+    box-shadow: 0 -38px 0  #2a166a;
+}
+.corner1{
+    bottom: 65%;
+    right: 95%;
 }
 }
 @media screen  and (max-width:768px) {
@@ -1805,7 +1960,28 @@ animation: waveFloat 5s ease-in-out infinite;
   .about-sec .title2 {
     font-size: 22px;
   }
-
+.about-img::before{
+    content: '';
+    width: 230px;
+    height: 120px;
+    background:#2a166a;
+    position: absolute;
+    bottom: 75.5%;
+    right: 65%;
+    border-bottom-right-radius: 85px;
+}
+.corner{
+    width: 40px;
+    height: 55px;
+   border-top-left-radius: 80px;
+    background: transparent;
+    position: absolute;
+    box-shadow: 0 -38px 0  #2a166a;
+}
+.corner1{
+    bottom: 62%;
+    right: 95%;
+}
   .about-sec .title4 {
     font-size: 16px;
   }

@@ -4,6 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Final Project</title>
+     <!-- Aos-cdn -->
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- font-swome-cdn -->
     <link
       rel="stylesheet"
@@ -11,6 +13,11 @@
       integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+    />
+    <!-- fancybox-cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
     <!-- swiper-css -->
     <link
@@ -40,7 +47,7 @@
       <nav class="navbar navbar-expand-xl">
         <div class="container">
           <div class="nav-logo">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" id="view-top" href="index.html">
               <img src="./images/image 1 (1).png" alt="" />
             </a>
           </div>
@@ -66,19 +73,27 @@
             </div>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="index2.html">Aboust Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index3.html">Services</a>
+                <a class="nav-link" aria-current="page" href="index3.html"
+                  >Services</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index4.html">Blog</a>
+                <a class="nav-link" aria-current="page" href="index4.html"
+                  >Blog</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index5.html">Contact</a>
+                <a class="nav-link" aria-current="page" href="index5.html"
+                  >Contact</a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Pricing</a>
@@ -110,7 +125,7 @@
           <div class="row align-items-start">
             <div class="col-xxl-4 col-xl-4 col-lg-4 col-12">
               <div class="banner-btn">
-                <a href="" class="get-btn"> Get Started</a>
+                <a href="" class="get-btn"> <span>Get Started</span></a>
                 <a href="" class="price-btn">See pricing</a>
               </div>
             </div>
@@ -341,8 +356,8 @@
                 </div>
               </div>
             </div>
-    <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 services-col">
-     <div class="card">
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 services-col">
+              <div class="card">
                 <div class="card-body">
                   <div class="card-img">
                     <img src="./images/image 18.png" class="" alt="..." />
@@ -363,9 +378,9 @@
                   </div>
                 </div>
               </div>
-    </div>
-    <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 services-col">
-     <div class="card">
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 services-col">
+              <div class="card">
                 <div class="card-body">
                   <div class="card-img">
                     <img src="./images/image 19.png" class="" alt="..." />
@@ -386,9 +401,9 @@
                   </div>
                 </div>
               </div>
-    </div>
-    <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 services-col">
-     <div class="card">
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 services-col">
+              <div class="card">
                 <div class="card-body">
                   <div class="card-img">
                     <img src="./images/image 20.png" class="" alt="..." />
@@ -409,8 +424,8 @@
                   </div>
                 </div>
               </div>
-    </div>
-</div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="work-sec">
@@ -428,10 +443,18 @@
             </p>
             <div class="work-btn-cont">
               <div class="work-btn">
-                <a href="" class="started-btn"> Get Started </a>
-                <a href="" class="play-btn">
-                  <i class="fa-solid fa-play"></i>
+                <a href="" class="started-btn"> <span>Get Starded</span> </a>
+                <a
+                  data-fancybox
+                  data-src="https://www.youtube.com/embed/6nDmtt1I4TY?si=uJmvOcu582_jHb1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"
+                  class="video-btn play-btn"
+                >
+                 <i class="fa-solid fa-play"></i>
+                 
                 </a>
+                <!-- <a href="" class="play-btn">
+                  <i class="fa-solid fa-play"></i>
+                </a> -->
               </div>
               <p>How It Works</p>
             </div>
@@ -452,474 +475,546 @@
             </div>
             <div class="col-4 us-col">
               <div class="us-btn">
-                <a href="" class="view-btn">
-                  View All
-                </a>
+                <a href="" class="view-btn"> View All </a>
               </div>
             </div>
           </div>
-  <div class="row align-items-start">
-    <div class="col-xxl-5 col-xl-5 col-lg-6 col-12 ai-col">
-      <div class="ai-img-one ai-img">
-        <img src="./images/Frame.png" alt="">
-      </div>
-    </div>
-    <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 ai-col">
-      <div class="ai-img-two ai-img">
-        <img src="./images/Frame (1).png" alt="">
-      </div>
-    </div>
-    <div class="col-xxl-3 col-xl-3 col-lg-6 col-12 ai-col">
-      <div class="ai-img-three ai-img">
-        <img src="./images/Frame (2).png" alt="">
-      </div>
-    </div>
-  </div>
-  <div class="row align-items-start">
-    <div class="col-22 ai-col">
-      <div class="ai-img-four ai-img">
-        <img src="./images/Frame (3).png" alt="">
-      </div>
-    </div>
-    <div class="col-22 ai-col">
-      <div class="ai-img-four ai-img">
-        <img src="./images/Frame (4).png" alt="">
-      </div>
-    </div>
-    <div class="col-33 ai-col">
-      <div class="ai-img-five ai-img">
-        <img src="./images/Frame (5).png" alt="">
-      </div>
-    </div>
-    <div class="col-22 ai-col">
-      <div class="ai-img-four ai-img">
-        <img src="./images/Frame (6).png" alt="">
-      </div>
-      </div>
-  </div>
-  <div class="row align-items-start">
-    <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 ai-col">
-      <div class="ai-img-six ai-img">
-        <img src="./images/Frame (7).png" alt="">
-      </div>
-    </div>
-    <div class="col-xxl-5 col-xl-5 col-lg-6 col-12 ai-col">
-      <div class="ai-img-seven ai-img">
-        <img src="./images/Frame (8).png" alt="">
-      </div>
-    </div>
-    <div class="col-xxl-3 col-xl-3 col-lg-6 col-12 ai-col">
-      <div class="ai-img-eight ai-img">
-        <img src="./images/Frame (9).png" alt="">
-      </div>
-    </div>
-  </div>
+          <div class="row align-items-start">
+            <div class="col-xxl-5 col-xl-5 col-lg-6 col-12 ai-col">
+              <div class="ai-img-one ai-img">
+                <img src="./images/Frame.png" alt="" />
+              </div>
+            </div>
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 ai-col">
+              <div class="ai-img-two ai-img">
+                <img src="./images/Frame (1).png" alt="" />
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-12 ai-col">
+              <div class="ai-img-three ai-img">
+                <img src="./images/Frame (2).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-22 ai-col">
+              <div class="ai-img-four ai-img">
+                <img src="./images/Frame (3).png" alt="" />
+              </div>
+            </div>
+            <div class="col-22 ai-col">
+              <div class="ai-img-four ai-img">
+                <img src="./images/Frame (4).png" alt="" />
+              </div>
+            </div>
+            <div class="col-33 ai-col">
+              <div class="ai-img-five ai-img">
+                <img src="./images/Frame (5).png" alt="" />
+              </div>
+            </div>
+            <div class="col-22 ai-col">
+              <div class="ai-img-four ai-img">
+                <img src="./images/Frame (6).png" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-start">
+            <div class="col-xxl-4 col-xl-4 col-lg-6 col-12 ai-col">
+              <div class="ai-img-six ai-img">
+                <img src="./images/Frame (7).png" alt="" />
+              </div>
+            </div>
+            <div class="col-xxl-5 col-xl-5 col-lg-6 col-12 ai-col">
+              <div class="ai-img-seven ai-img">
+                <img src="./images/Frame (8).png" alt="" />
+              </div>
+            </div>
+            <div class="col-xxl-3 col-xl-3 col-lg-6 col-12 ai-col">
+              <div class="ai-img-eight ai-img">
+                <img src="./images/Frame (9).png" alt="" />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="price-sec">
         <div class="container">
           <div class="price-header">
-            <h4 class="title4">
-               Pricing plans
-            </h4>
+            <h4 class="title4">Pricing plans</h4>
             <h2 class="title2">
-               Affordable AI Plans to Streamline <br>
-                Work and Maximize Output
+              Affordable AI Plans to Streamline <br />
+              Work and Maximize Output
             </h2>
           </div>
-  <div class="row align-items-start">
-    <div class="col">
-  <div class="card price-card">
-       <div class="card-box" >
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-  </div>
- 
-  <div class="card-body">
-   <p class="card-text">
-    Starter Plan
-    Ideal for individuals and small <br> teams 
-    getting started with AI
-   </p>
-  </div>
-  <div class="card-body">
-    <p class="card-text">
-      Starting at: <br>
-       $49/mo
-    </p>
-  </div>
-  </div>
-  <div class="card-sub-box">
-    <ul>
-      <li>Access to core AI tools</li>
-      <li>5 automation workflows</li>
-      <li>Basic analytics dashboard</li>
-      <li>Email support</li>
-    </ul>
-    <div class="card-body">
-      <div class="get-btn">
-        Get Started
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-    <div class="col">
-       <div class="card price-card">
-       <div class="card-box" >
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-  </div>
- 
-  <div class="card-body">
-   <p class="card-text">
-    Starter Plan
-    Ideal for individuals and small <br> teams 
-    getting started with AI
-   </p>
-  </div>
-  <div class="card-body">
-    <p class="card-text">
-      Starting at: <br>
-       $49/mo
-    </p>
-  </div>
-  </div>
-  <div class="card-sub-box">
-    <ul>
-      <li>Access to core AI tools</li>
-      <li>5 automation workflows</li>
-      <li>Basic analytics dashboard</li>
-      <li>Email support</li>
-    </ul>
-    <div class="card-body">
-      <div class="get-btn">
-        Get Started
-      </div>
-    </div>
-  </div>
-</div>
-    </div>
-</div>
+          <div class="row align-items-start">
+            <div class="col">
+              <div class="card price-card">
+                <div class="card-box">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Starter Plan Ideal for individuals and small <br />
+                      teams getting started with AI
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      Starting at: <br />
+                      $49/mo
+                    </p>
+                  </div>
+                </div>
+                <div class="card-sub-box">
+                  <ul>
+                    <li>Access to core AI tools</li>
+                    <li>5 automation workflows</li>
+                    <li>Basic analytics dashboard</li>
+                    <li>Email support</li>
+                  </ul>
+                  <div class="card-body">
+                    <div class="get-btn"> <span>Get Starded</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card price-card">
+                <div class="card-box">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                  </div>
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Starter Plan Ideal for individuals and small <br />
+                      teams getting started with AI
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <p class="card-text">
+                      Starting at: <br />
+                      $49/mo
+                    </p>
+                  </div>
+                </div>
+                <div class="card-sub-box">
+                  <ul>
+                    <li>Access to core AI tools</li>
+                    <li>5 automation workflows</li>
+                    <li>Basic analytics dashboard</li>
+                    <li>Email support</li>
+                  </ul>
+                  <div class="card-body">
+                    <div class="get-btn"><span>Get Starded</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="testimonial-sec">
         <div class="container">
-  <div class="row align-items-start">
-    <div class="col-xxl-4 col-xl-4 col-12">
-      <div class="circle-slider">
-        <div class="inner-circle">
-          <div class="small-circle">
-            66
+          <div class="row align-items-start">
+            <div class="col-xxl-4 col-xl-4 col-12">
+              <div class="circle-slider">
+                <div class="inner-circle">
+                  <div class="small-circle">66</div>
+                </div>
+                <div class="circle-img-one">
+                  <img src="./images/Mask group (2).png" alt="" />
+                </div>
+                <div class="circle-img-two">
+                  <img src="./images/mask group (3).png" alt="" />
+                </div>
+                <div class="circle-img-three">
+                  <img src="./images/mask group (4).png" alt="" />
+                </div>
+                <div class="circle-ball-one"></div>
+                <div class="circle-ball-two"></div>
+                <div class="circle-ball-three"></div>
+              </div>
+            </div>
+            <div class="col-xxl-8 col-xl-8 col-12">
+              <!-- Slider main container -->
+              <div class="swiper testimonial-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide testimonial-slide">
+                    <div class="testimonial-cont">
+                      <h4 class="title4">Testimonials</h4>
+                      <h2 class="title2">
+                        Hear From Those <br />Who’ve Grown With Us
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Varius
+                        pellentesque tortor in dolor enim. Tempus vitae gravida
+                        mauris morbi egestas morbi egestas id fringilla.
+                        Tincidunt scelerisque sit tristique maecenas venenatis
+                        quam etiam aenean ullamcorper. Id habitasse interdum id
+                        amet dolor.
+                      </p>
+                      <div class="testimonial-img">
+                        <img src="./images/Frame 135.png" alt="" />
+                      </div>
+                      <p class="testimonial-sub-header">
+                        <span> Kevin Andrew</span>
+                      </p>
+                      <p class="testimonial-sub-header">
+                        <span>Digital Marketing Manager</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide testimonial-slide">
+                    <div class="testimonial-cont">
+                      <h4 class="title4">Testimonials</h4>
+                      <h2 class="title2">
+                        Hear From Those <br />Who’ve Grown With Us
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Varius
+                        pellentesque tortor in dolor enim. Tempus vitae gravida
+                        mauris morbi egestas morbi egestas id fringilla.
+                        Tincidunt scelerisque sit tristique maecenas venenatis
+                        quam etiam aenean ullamcorper. Id habitasse interdum id
+                        amet dolor.
+                      </p>
+                      <div class="testimonial-img">
+                        <img src="./images/Frame 135.png" alt="" />
+                      </div>
+                      <p class="testimonial-sub-header">
+                        <span> Kevin Andrew</span>
+                      </p>
+                      <p class="testimonial-sub-header">
+                        <span>Digital Marketing Manager</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide testimonial-slide">
+                    <div class="testimonial-cont">
+                      <h4 class="title4">Testimonials</h4>
+                      <h2 class="title2">
+                        Hear From Those <br />Who’ve Grown With Us
+                      </h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur. Varius
+                        pellentesque tortor in dolor enim. Tempus vitae gravida
+                        mauris morbi egestas morbi egestas id fringilla.
+                        Tincidunt scelerisque sit tristique maecenas venenatis
+                        quam etiam aenean ullamcorper. Id habitasse interdum id
+                        amet dolor.
+                      </p>
+                      <div class="testimonial-img">
+                        <img src="./images/Frame 135.png" alt="" />
+                      </div>
+                      <p class="testimonial-sub-header">
+                        <span> Kevin Andrew</span>
+                      </p>
+                      <p class="testimonial-sub-header">
+                        <span>Digital Marketing Manager</span>
+                      </p>
+                    </div>
+                  </div>
+                  ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="circle-img-one">
-          <img src="./images/Mask group (2).png" alt="">
-        </div>
-        <div class="circle-img-two">
-          <img src="./images/mask group (3).png" alt="">
-        </div>
-        <div class="circle-img-three">
-          <img src="./images/mask group (4).png" alt="">
-        </div>
-        <div class="circle-ball-one"></div>
-         <div class="circle-ball-two"></div>
-          <div class="circle-ball-three"></div>
-      </div>
-    </div>
-    <div class="col-xxl-8 col-xl-8 col-12">
-      <!-- Slider main container -->
-<div class="swiper testimonial-swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide testimonial-slide">
-      <div class="testimonial-cont">
-        <h4 class="title4">
-          Testimonials
-        </h4>
-        <h2 class="title2">
-           Hear From Those <br>Who’ve Grown With Us
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur.
-           Varius pellentesque tortor in dolor enim.
-            Tempus vitae gravida mauris morbi egestas
-             morbi egestas id fringilla. Tincidunt scelerisque 
-             sit tristique maecenas venenatis quam etiam aenean
-              ullamcorper.
-           Id habitasse interdum id amet dolor.</p>
-        <div class="testimonial-img">
-          <img src="./images/Frame 135.png" alt="">
-        </div>
-        <p class="testimonial-sub-header">
-             <span> Kevin Andrew</span>
-        </p>
-        <p class="testimonial-sub-header">
-          <span>Digital Marketing Manager</span>
-          </p>
-        </div>
-    </div>
-    <div class="swiper-slide testimonial-slide">
-      <div class="testimonial-cont">
-        <h4 class="title4">
-          Testimonials
-        </h4>
-        <h2 class="title2">
-           Hear From Those <br>Who’ve Grown With Us
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur.
-           Varius pellentesque tortor in dolor enim.
-            Tempus vitae gravida mauris morbi egestas
-             morbi egestas id fringilla. Tincidunt scelerisque 
-             sit tristique maecenas venenatis quam etiam aenean
-              ullamcorper.
-           Id habitasse interdum id amet dolor.</p>
-        <div class="testimonial-img">
-          <img src="./images/Frame 135.png" alt="">
-        </div>
-        <p class="testimonial-sub-header">
-             <span> Kevin Andrew</span>
-        </p>
-        <p class="testimonial-sub-header">
-          <span>Digital Marketing Manager</span>
-          </p>
-        </div>
-    </div>
-    <div class="swiper-slide testimonial-slide">
-      <div class="testimonial-cont">
-        <h4 class="title4">
-          Testimonials
-        </h4>
-        <h2 class="title2">
-           Hear From Those <br>Who’ve Grown With Us
-        </h2>
-        <p>Lorem ipsum dolor sit amet consectetur.
-           Varius pellentesque tortor in dolor enim.
-            Tempus vitae gravida mauris morbi egestas
-             morbi egestas id fringilla. Tincidunt scelerisque 
-             sit tristique maecenas venenatis quam etiam aenean
-              ullamcorper.
-           Id habitasse interdum id amet dolor.</p>
-        <div class="testimonial-img">
-          <img src="./images/Frame 135.png" alt="">
-        </div>
-        <p class="testimonial-sub-header">
-             <span> Kevin Andrew</span>
-        </p>
-        <p class="testimonial-sub-header">
-          <span>Digital Marketing Manager</span>
-          </p>
-        </div>
-    </div>
-    ...
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-    </div>
-</div>
         </div>
       </section>
       <section class="faq-sec">
         <div class="container">
           <div class="faq-header">
-            <h4 class="title4">
-               Faq's
-            </h4>
+            <h4 class="title4">Faq's</h4>
             <h3 class="title3">
-                Answers to Your Most <br>
-                 Frequently Asked Questions
+              Answers to Your Most <br />
+              Frequently Asked Questions
             </h3>
           </div>
           <div class="accordion accordion-flush" id="accordionFlushExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-        What types of businesses can benefit from your AI solutions?
-      </button>
-    </h2>
-    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item’s accordion body.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        What types of businesses can benefit from your AI solutions?
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        What types of businesses can benefit from your AI solutions?
-      </button>
-    </h2>
-    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item’s accordion body. Let’s imagine this being filled with some actual content.</div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-        What types of businesses can benefit from your AI solutions?
-      </button>
-    </h2>
-    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item’s accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-    </div>
-  </div>
-</div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  What types of businesses can benefit from your AI solutions?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item’s accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  What types of businesses can benefit from your AI solutions?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the second item’s accordion body. Let’s imagine this being
+                  filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  What types of businesses can benefit from your AI solutions?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the second item’s accordion body. Let’s imagine this being
+                  filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  What types of businesses can benefit from your AI solutions?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item’s accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="build-sec">
         <div class="container">
-  <div class="row align-items-start">
-    <div class="col-xxl-6 col-xl-6 col-12">
-      <div class="build-img">
-        <img src="./images/image 36.png" alt="">
-      </div>
-    </div>
-    <div class="col-xxl-6 col-xl-6 col-12">
-      <div class="build-cont">
-        <h5 class="title5">
-           Let’s Build Something Intelligent Together
-        </h5>
-        <div class="build-btn">
-          <a href="" class="get-btn">
-            Get Starded
-          </a>
-        </div>
-      </div>
-    </div>
-</div>
+          <div class="row align-items-start">
+            <div class="col-xxl-6 col-xl-6 col-12">
+              <div class="build-img">
+                <img src="./images/image 36.png" alt="" />
+              </div>
+            </div>
+            <div class="col-xxl-6 col-xl-6 col-12">
+              <div class="build-cont">
+                <h5 class="title5">
+                  Let’s Build Something Intelligent Together
+                </h5>
+                <div class="build-btn">
+                  <a href="" class="get-btn"> <span>Get Starded</span> </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer-sec">
       <div class="container">
-  <div class="row align-items-start">
-    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
-      <div class="footer-main-cont">
-        <div class="footer-logo">
-        <a href="">
-          <img src="./images/footer-logo 1.png" alt="">
-        </a>
-      </div>
-      <p>
-        We create intelligent,
-         scalable AI solutions that
-          help businesses work smarter,
-         move faster, and achieve more.
-      </p>
-      <ul>
-        <li><a href="" class="social-link">
-          <img src="./images/facebook.png" alt="">
-        </a></li>
-        <li><a href="" class="social-link">
-          <img src="./images/instagram.png" alt="">
-        </a></li>
-        <li><a href="" class="social-link">
-          <img src="./images/linkedin.png" alt="">
-        </a></li>
-      </ul>
-      </div>
-    </div>
-    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
-      <div class="footer-sub-cont">
-        <div class="footer-header">
-            Navigation
-        </div>
-        <ul>
-          <li><a href="" class="footer-link">
-             <div class="footer-icon">
-             <i class="fa-solid fa-arrow-right"></i>
+        <div class="row align-items-start">
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
+            <div class="footer-main-cont">
+              <div class="footer-logo">
+                <a href="">
+                  <img src="./images/footer-logo 1.png" alt="" />
+                </a>
+              </div>
+              <p>
+                We create intelligent, scalable AI solutions that help
+                businesses work smarter, move faster, and achieve more.
+              </p>
+              <ul>
+                <li>
+                  <a href="" class="social-link">
+                    <img src="./images/facebook.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-link">
+                    <img src="./images/instagram.png" alt="" />
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="social-link">
+                    <img src="./images/linkedin.png" alt="" />
+                  </a>
+                </li>
+              </ul>
             </div>
-            About Us
-          </a></li>
-          <li><a href="" class="footer-link">
-             <div class="footer-icon">
-             <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            Services</a></li>
-          <li><a href="" class="footer-link">
-             <div class="footer-icon">
-             <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            Project</a></li>
-          <li><a href="" class="footer-link">
-             <div class="footer-icon">
-             <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            Pricing</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
-      <div class="footer-sub-cont">
-        <div class="footer-header">
-            Contact Info
-        </div>
-        <ul>
-          <li><a href="" class="footer-link">
-            <div class="footer-icon">
-              <i class="fa-solid fa-phone-volume"></i>
-            </div>
-            +61383766284
-          </a></li>
-          <li><a href="" class="footer-link">
-           <div class="footer-icon">
-             <i class="fa-regular fa-envelope"></i>
-           </div>
-            mailto:info@aivio.com
-          </a></li>
-          <li><a href="" class="footer-link">
-            <div class="footer-icon">
-              <i class="fa-solid fa-location-dot"></i>
-            </div>
-            123 Real Estate Ave, NY 10001</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-     <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
-      <div class="footer-sub-cont">
-        <div class="footer-header">
-          Newsletter Signup
-        </div>
-        <form action="" class="footer-form">
-          <input class="email" type="email" placeholder="Enter Your Email Adress" name="" id="">
-          <div class="email-icon">
-            <img src="./images/Frame 214.png" alt="">
           </div>
-          <div class="checkbox-cont">
-            <input type="checkbox" name="" id="checkbox">
-            <p>I agree to the Privacy Policy</p>
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
+            <div class="footer-sub-cont">
+              <div class="footer-header">Navigation</div>
+              <ul>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    Services</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    Project</a
+                  >
+                </li>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    Pricing</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  <div class="footer-top-btn">
-    <a href="" class="top-btn">
-      <i class="fa-solid fa-arrow-up"></i>
-    </a>
-  </div>
-  <div class="footer-line">
-    <p>Copyright © 2025 Aivio. All Rights Reserved.</p>
-  </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
+            <div class="footer-sub-cont">
+              <div class="footer-header">Contact Info</div>
+              <ul>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-phone-volume"></i>
+                    </div>
+                    +61383766284
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    mailto:info@aivio.com
+                  </a>
+                </li>
+                <li>
+                  <a href="" class="footer-link">
+                    <div class="footer-icon">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    123 Real Estate Ave, NY 10001</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-3 col-lg-6 col-md-6 col-12">
+            <div class="footer-sub-cont">
+              <div class="footer-header">Newsletter Signup</div>
+              <form action="" class="footer-form">
+                <input
+                  class="email"
+                  type="email"
+                  placeholder="Enter Your Email Adress"
+                  name=""
+                  id=""
+                />
+                <div class="email-icon">
+                  <img src="./images/Frame 214.png" alt="" />
+                </div>
+                <div class="checkbox-cont">
+                  <input type="checkbox" name="" id="checkbox" />
+                  <p>I agree to the Privacy Policy</p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-top-btn">
+          <a href="#view-top" class="top-btn">
+            <i class="fa-solid fa-arrow-up"></i>
+          </a>
+        </div>
+        <div class="footer-line">
+          <p>Copyright © 2025 Aivio. All Rights Reserved.</p>
+        </div>
       </div>
     </footer>
+    <!-- Aos-js -->
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- fancy-box-cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
     <!-- swiper-js -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <!-- bootsrap-js -->

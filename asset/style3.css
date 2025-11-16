@@ -20,6 +20,9 @@
   --small-cicrcle-color: #79c1e2;
   --second-cicrle-color: #cc9cc2;
 }
+html{
+  scroll-behavior: smooth;
+}
 body,
 html {
   overflow-x: hidden;
@@ -34,6 +37,29 @@ a {
 }
 ul {
   list-style-type: none;
+}
+[data-aos] {
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+}
+[data-aos="fade-up"] {
+  transform: translateY(40px);
+  opacity: 0;
+}
+
+[data-aos="fade-up"].aos-animate {
+  transform: translateY(0);
+  opacity: 1;
+}
+[data-aos] {
+  transition-timing-function: ease-out;
+}
+/* [data-aos] {
+  transition-duration: 1200ms; /* slow */
+} */
+
+[data-aos] {
+  transition-duration: 600ms; /* fast */
 }
 .us-row {
   align-items: center !important;
@@ -206,7 +232,9 @@ nav {
 }
 .banner-cont>.title1{
     text-align: center;
-    color: var(--text-color);
+     background: linear-gradient(90deg, #0a0a8f 40%, #3aa8ff 50%, #aee3ff 60%, #ffffff 100%);
+  color: transparent;
+  background-clip: text;;
 }
 .banner-btn{
    margin: 360px 0;
@@ -254,6 +282,7 @@ nav {
   border-radius: 57.33px;
   outline: 1px solid var(--text-color);
   margin: 6px 0;
+  height: 397px;
 }
 .card-img{
     width: 91.76px;

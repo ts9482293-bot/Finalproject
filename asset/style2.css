@@ -364,6 +364,7 @@ nav {
 /* our-sec */
 .our-sec{
   background: var(--background-color);
+  padding: 143px 0;
 }
 .our-header>.title2{
    color: var(--text-color);
@@ -970,7 +971,7 @@ nav {
     height: auto;
     padding: 120px 0 80px;
     transform: none;
-    top: 0;
+    top: 10% ;
   }
 
   .title1 {

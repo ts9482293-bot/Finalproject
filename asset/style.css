@@ -1373,6 +1373,9 @@ animation: waveFloat 5s ease-in-out infinite;
 .testimonial-cont>.title4::before{
  right: 60%;
 }
+.testimonial-img{
+  margin: 0 auto;
+}
 }
 
 /*  (max-width: 992px) */

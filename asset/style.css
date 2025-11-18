@@ -251,8 +251,10 @@ nav{
     margin-left: 35px;
 }
 .banner-btn{
-    max-width: 529px;
+    max-width: 300px;
     margin-left: 35px;
+    display: flex;
+    align-items: center;
 }
 .get-btn{
     padding: 20.65px 53.72px;
@@ -284,6 +286,9 @@ nav{
     color: var(--text-color);
     max-width: 150px;
     padding-left: 20px ;
+}
+.price-btn:hover{
+  color: var(--primary-color);
 }
 .get-btn:hover::before{
     left: 0;
@@ -1047,10 +1052,10 @@ animation: waveFloat 5s ease-in-out infinite;
     position: absolute;
     animation: floatBall 6s ease-in-out infinite alternate;
 }
-@keyframes floatBall {
+/* @keyframes floatBall {
   from { transform: translateY(0); }
   to { transform: translateY(-20px); }
-}
+} */
 /* faq-sec */
 .faq-sec{
     background: var(--background-color);
@@ -1073,6 +1078,7 @@ animation: waveFloat 5s ease-in-out infinite;
 }
 .faq-header{
     text-align: center;
+    margin-bottom: 40px;
 }
 .faq-header>.title3{
     color: var(--text-color);
@@ -1207,7 +1213,7 @@ animation: waveFloat 5s ease-in-out infinite;
 .email-icon{
     width: 45px;
     position: absolute;
-    left: 84%;
+    left: 72%;
     top: 8%;
 }
 .email::placeholder{
@@ -1266,14 +1272,52 @@ animation: waveFloat 5s ease-in-out infinite;
     .nav-item{
         margin: 0 20px;
     }
+    .email-icon{
+      left: 76%;
+    }.circle-slider{
+      width: 364px;
+     height: 364px;
+    border-radius: 182px;
+   }
+   .inner-circle{
+    width: 238px;
+    height: 238px;
+    border-radius: 119px;
+   }
+   .small-circle{
+     height: 170px;
+     width: 170px;
+     border-radius: 85px;
+   }
+   .circle-ball-one,
+   .circle-ball-two,
+   .circle-ball-three{
+    width: 40px;
+    height: 40px;
+   }
+   .circle-img-one,
+   .circle-img-two,
+   .circle-img-three{
+    width: 100px;
+   }
 }
-
+@media screen and (max-width:1500px){
+  .email-icon{
+    left: 78%;
+  }
+}
 @media screen and (max-width:1400px){
     .nav-item{
         margin: 0 16px;
     }
    .primary-btn{
     font-size: 25px;
+   }
+   .email-icon{
+    left: 80%;
+   }
+   .email-icon{
+    left: 83%;
    }
    .nav-link{
     font-size: 18px;
@@ -1315,6 +1359,9 @@ animation: waveFloat 5s ease-in-out infinite;
    .email-icon{
      left: 79%;
    }
+   .email{
+    max-width: 300px;
+   }
 }
 @media screen and (max-width:1290px){
     .banner-sub-img{
@@ -1324,7 +1371,14 @@ animation: waveFloat 5s ease-in-out infinite;
       padding-left: 25px;
     }
     .email{
-      max-width: 300px;
+      max-width: 286px;
+    }
+    .edit-btn{
+      padding: 18px 22px;
+      font-size: 14px;
+    }
+    .email-icon{
+      left: 83%;
     }
 }
 @media screen and (max-width:1199px){
@@ -1332,11 +1386,11 @@ animation: waveFloat 5s ease-in-out infinite;
        background: var(--background-color);  
        flex-direction: column;
    }
+   .email-icon{
+    left: 67%;
+   }
    .offcanvas>ul{
     flex-direction: column;
-   }
-   .email-icon{
-    left: 71%;
    }
    .nav-btn{
     display: flex;
@@ -1407,7 +1461,13 @@ animation: waveFloat 5s ease-in-out infinite;
   .work-sec .title2 {
     font-size: 34px;
   }
-
+  .testimonial-swiper{
+    height: 120vh;
+  }
+  .testimonial-slide{
+    position: relative;
+    bottom: 20%;
+  }
   .work-sec p {
     font-size: 17px;
   }
@@ -1515,6 +1575,9 @@ animation: waveFloat 5s ease-in-out infinite;
     bottom: 64%;
     right: 94%;
 }
+/* .card-sub-box>ul{
+  padding: 0;
+} */
 }
 
 /*  (max-width: 992px) */
@@ -1523,7 +1586,7 @@ animation: waveFloat 5s ease-in-out infinite;
     row-gap: 30px;
   }
   .email-icon{
-    left: 70%;
+    left: 67%;
   }
   .testimonial-cont>.title4::before{
     right: 63%;
@@ -1612,6 +1675,9 @@ animation: waveFloat 5s ease-in-out infinite;
 @media screen and (max-width:992px){
     .banner-cont{
         margin: 0 auto;
+    }
+    .price-card{
+      padding: 18px;
     }
     .banner-btn{
       margin: 0 auto;
@@ -1735,12 +1801,17 @@ animation: waveFloat 5s ease-in-out infinite;
   .about-img {
     margin: 0 auto;
   }
-
+  .accordion-item{
+    margin-bottom: 100px;
+  }
  
 }
 @media screen and (max-width:880px){
    .email-icon{
-    left: 71%;
+    left: 67%;
+   }
+   .col-22{
+    width: 80%;
    }
 }
 
@@ -1749,16 +1820,24 @@ animation: waveFloat 5s ease-in-out infinite;
   .about-sec {
     padding: 50px 0;
   }
-
-  .about-sec .title2 {
-    font-size: 26px;
+  .col-22{
+    width: 100%;
   }
-
+  .about-sec .title2 {
+    font-size: 24px;
+  }
+  .view-btn{
+    padding: 16px 22px;
+    font-size: 14px;
+  }
   .about-sec .title4 {
     font-size: 18px;
   }
   .email-icon{
     left: 35%;
+  }
+  .title2{
+    font-size: 24px;
   }
   .about-sec .read-btn {
     font-size: 14px;
@@ -1838,7 +1917,7 @@ animation: waveFloat 5s ease-in-out infinite;
   }
 
   .us-sec .title2 {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.4;
   }
 
@@ -1912,10 +1991,19 @@ animation: waveFloat 5s ease-in-out infinite;
       font-size: 78px;
     }
     .about-cont .title2 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.4;
   }
-
+  .edit-btn{
+  font-size: 10px;
+  padding: 12px 16px;
+}
+.card-sub-box>ul{
+  padding: 0;
+}
+.accordion-item{
+  margin-bottom: 60px;
+}
   .banner-sub-img {
     width: 70px;
   }
@@ -1924,7 +2012,26 @@ animation: waveFloat 5s ease-in-out infinite;
   .cont-img {
     width: 70px;
   }
-
+  .footer-sub-cont{
+    text-align: center;
+  }
+  .footer-link{
+   display: flex;
+   justify-content: center;
+  }
+  .footer-logo{
+    margin: 0 auto;
+  }
+  .footer-main-cont>ul{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main-cont>p{
+    text-align: center;
+  }
+  .checkbox-cont{
+    justify-content: center;
+  }
   .banner-sub-imgbox {
     /* padding: 12px 25px;
     width: 300px; */
@@ -1932,7 +2039,7 @@ animation: waveFloat 5s ease-in-out infinite;
 }
 @media screen and (max-width:670px){
    .email-icon{
-    left: 71%;
+    left: 67%;
    }
    .testimonial-cont>.title4::before{
     right: 66%;
@@ -2105,6 +2212,75 @@ animation: waveFloat 5s ease-in-out infinite;
   .about-box > p {
     font-size: 16px;
   }
+  .small-circle{
+    font-size: 32px; /* also half */
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 50%;
+}
+.inner-circle{
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    background: var(--circle-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle-slider{
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    outline: 1px solid var(--circle-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: rotateCircle 20s linear infinite;
+}
+.circle-img-one,
+.circle-img-two,
+.circle-img-three{
+  width: 80px;
+}
+.circle-ball-one,
+.circle-ball-two,
+.circle-ball-three{
+  width: 40px;
+  height: 40px;
+}
+.circle-img-two{
+  top: 45%;
+}
+.circle-ball-three{
+  bottom: 2%;
+}
+.circle-img-three{
+  top: 62%;
+}
+.card-sub-box>ul>li{
+  font-size: 12px;
+}
+.card-title{
+  font-size: 18px;
+}
+.card-text{
+  font-size: 12px;
+}
+.card-body{
+  padding: 5px;
+}
+.card-sub-box{
+  padding: 10px;
+}
+.testimonial-cont>.title4::before{
+  right: 70% ;
+}
 }
 @media screen and (max-width: 480px) {
   .price-header .title2 {
@@ -2114,13 +2290,23 @@ animation: waveFloat 5s ease-in-out infinite;
     padding: 10px 18px;
     font-size: 14px;
   }
+  .testimonial-cont>.title4::before{
+  right: 75% ;
+}
   .email-icon{
-    left: 71%;
+    left: 67%;
   }
   .price-header>.title4::before{
     right: 72%;
     top: 50%;
     transform: translate(8px, -60%);
+}
+.testimonial-slide{
+  position: relative;
+  bottom: 20%;
+}
+.testimonial-swiper{
+  height: 110vh;
 }
 .faq-header>.title4::before{
     right: 63%;
@@ -2129,5 +2315,19 @@ animation: waveFloat 5s ease-in-out infinite;
 }
 .testimonial-cont>.title4>::before{
   right: 75%;
+}
+.work-header>.title4::before{
+  right: 69%;
+}
+.title5{
+  font-size: 50px;
+}
+}
+@media screen and (max-width:380px){
+  .testimonial-cont>.title4::before{
+  right: 77% ;
+}
+.email-icon{
+  left: 77%;
 }
 }

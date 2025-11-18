@@ -300,11 +300,28 @@ nav {
   font-size: 13px;
   font-weight: 500;
   border-radius: 30px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
 }
-.get-btn:hover {
-  background: var(--text-color);
-  color: var(--primary-color);
-  outline: 1px solid var(--text-color);
+.get-btn::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--crd-color);
+  transition: 0.4s ease;
+  color: var(--text-color);
+  z-index: 1;
+}
+.get-btn>span{
+  position: relative;
+  z-index: 2;
+}
+.get-btn:hover::before {
+  left: 0;
 }
 /* statistics-sec */
 .statistics-sec {
@@ -510,11 +527,28 @@ nav {
     border-radius: 35.81px;
     background: var(--primary-color);
     color: var(--text-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
 }
-.started-btn:hover{
-    background: var(--text-color);
-    color: var(--primary-color);
-    outline: 1px solid var(--primary-color);
+.started-btn::before {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--crd-color);
+  transition: 0.4s ease;
+  color: var(--text-color);
+  z-index: 1;
+}
+.starteds-btn>span{
+  position: relative;
+  z-index: 2;
+}
+.started-btn:hover::before{
+  left: 0;
 }
 .play-btn{
     width: 59.58px;
@@ -1011,6 +1045,25 @@ nav {
   .home-btn {
     font-size: 16px;
     padding: 12px 26px;
+  }.footer-sub-cont{
+    text-align: center;
+  }
+  .footer-link{
+   display: flex;
+   justify-content: center;
+  }
+  .footer-logo{
+    margin: 0 auto;
+  }
+  .footer-main-cont>ul{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main-cont>p{
+    text-align: center;
+  }
+  .checkbox-cont{
+    justify-content: center;
   }
 }
 @media screen and (max-width:576px) {

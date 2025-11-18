@@ -672,4 +672,24 @@ nav {
   .blog-card {
     width: 100%;
   }
+  .footer-sub-cont{
+    text-align: center;
+  }
+  .footer-link{
+   display: flex;
+   justify-content: center;
+  }
+  .footer-logo{
+    margin: 0 auto;
+  }
+  .footer-main-cont>ul{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main-cont>p{
+    text-align: center;
+  }
+  .checkbox-cont{
+    justify-content: center;
+  }
 }

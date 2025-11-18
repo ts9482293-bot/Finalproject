@@ -54,10 +54,6 @@ ul {
 [data-aos] {
   transition-timing-function: ease-out;
 }
-/* [data-aos] {
-  transition-duration: 1200ms; /* slow */
-} */
-
 [data-aos] {
   transition-duration: 600ms; /* fast */
 }
@@ -1167,7 +1163,26 @@ nav{
   .banner-sub-img {
     width: 70px;
   }
-
+  .footer-sub-cont{
+    text-align: center;
+  }
+  .footer-link{
+   display: flex;
+   justify-content: center;
+  }
+  .footer-logo{
+    margin: 0 auto;
+  }
+  .footer-main-cont>ul{
+    display: flex;
+    justify-content: center;
+  }
+  .footer-main-cont>p{
+    text-align: center;
+  }
+  .checkbox-cont{
+    justify-content: center;
+  }
   .about-sub-img,
   .cont-img {
     width: 70px;

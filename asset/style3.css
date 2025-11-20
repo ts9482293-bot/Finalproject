@@ -214,17 +214,16 @@ nav {
 /* banner-sec */
 .banner-sec{
     background: url(../image3/mask\ group\ new.png)no-repeat center/cover;
-    min-height: 130vh;
+    min-height: 90vh;
     background-color: var(--background-color);
    overflow: hidden;
    width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 .banner-container{
-   position: absolute;
-   top: 62%;
-   left: 1%;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
+  margin-top: 80px;
 }
 .banner-cont>.title1{
     text-align: center;
@@ -233,7 +232,7 @@ nav {
   background-clip: text;;
 }
 .banner-btn{
-   margin: 360px 0;
+   margin: 302px 0 302px;
    text-align: center;
 }
 .home-btn{
@@ -669,16 +668,16 @@ nav {
     overflow: hidden;
     width: 100%;
   } */
-  .banner-sec{
+  /* .banner-sec{
     background: url(../image3/mask\ group\ new.png)no-repeat center/cover;
     min-height: 120vh;
     background-color: var(--background-color);
    overflow: hidden;
    width: 100%;
-}
-.banner-container{
+} */
+/* .banner-container{
   top: 60%;
-}
+} */
 nav{
   margin-bottom: 30px;
 }

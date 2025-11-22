@@ -483,6 +483,19 @@ nav {
     border-radius: 30px;
     background: transparent;
 }
+.footer-link-header{
+  max-width: 103px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>li{
+  max-width: 150px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-form{
     position: relative;
 }
@@ -766,6 +779,12 @@ nav {
   .title3{
     font-size: 50px;
   }
+   .footer-link-cont>ul>li{
+    margin: 0;
+   }
+   .footer-link-header{
+    margin: 0;
+   }
 }
 @media screen and (max-width:992px){
   .form-text{
@@ -819,6 +838,12 @@ nav {
   }
   .checkbox-cont{
     justify-content: center;
+  }
+  .footer-link-header{
+    margin: 0 auto;
+  }
+  .footer-link-cont>ul>li{
+    margin: 0 auto;
   }
 }
 @media screen and (max-width:576px){

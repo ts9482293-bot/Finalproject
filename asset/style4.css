@@ -421,6 +421,19 @@ nav {
 .footer-form {
   position: relative;
 }
+.footer-link-header{
+  max-width: 103px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>li{
+  max-width: 150px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .email-icon {
   width: 45px;
   position: absolute;
@@ -645,6 +658,12 @@ nav {
   .banner-cont > p {
     font-size: 17px;
   }
+   .footer-link-cont>ul>li{
+    margin: 0;
+   }
+   .footer-link-header{
+    margin: 0;
+   }
 }
 @media screen and (max-width: 992px) {
   .email-icon {
@@ -697,5 +716,11 @@ nav {
   }
   .banner-container{
     margin-bottom: 500px;
+  }
+  .footer-link-header{
+    margin: 0 auto;
+  }
+  .footer-link-cont>ul>li{
+    margin: 0 auto;
   }
 }

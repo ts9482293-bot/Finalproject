@@ -706,7 +706,7 @@ nav {
 .email-icon{
     width: 45px;
     position: absolute;
-    left: 84%;
+    left: 72%;
     top: 8%;
 }
 .email::placeholder{
@@ -745,7 +745,19 @@ nav {
     background: var(--text-color);
     color: var(--primary-color);
 }
-
+.footer-link-header{
+  max-width: 103px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>li{
+  max-width: 150px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-line{
     max-width: 1620px;
     border-top: 1px solid var(--text-color);
@@ -765,8 +777,15 @@ nav {
   .nav-item {
     margin: 0 20px;
   }
+  .email-icon{
+    left: 76%;
+  }
 }
-
+@media screen and (max-width:1500px){
+  .email-icon{
+    left: 79%;
+  }
+}
 @media screen and (max-width: 1400px) {
   .nav-item {
     margin: 0 16px;
@@ -820,6 +839,23 @@ nav {
   .about-img{
     margin: 10px auto;
   }
+  .email{
+    max-width: 280px;
+  }
+  .email-icon{
+    left: 70%;
+  }
+  .title5{
+    font-size: 100px;
+  }
+}
+@media screen and (max-width:1290px){
+  .email-icon{
+    left: 79%;
+  }
+  /* .title5{
+    font-size: 80px;
+  } */
 }
 @media screen and (max-width: 1199px) {
   .offcanvas {
@@ -926,6 +962,15 @@ nav {
   .banner-cont > p {
     font-size: 17px;
   }
+   .footer-link-cont>ul>li{
+    margin: 0;
+   }
+   .footer-link-header{
+    margin: 0;
+   }
+   .email{
+    max-width: 300px;
+   }
 }
 @media screen and (max-width:992px){
   .our-header>.title2{
@@ -973,6 +1018,12 @@ nav {
   .banner-btn {
     text-align: center;
   }
+  .footer-link-cont{
+    margin: 0 ;
+  }
+  .footer-link-header{
+    margin: 0 ;
+  }
 }
 @media screen and (max-width:768px){
    .work-sec {
@@ -999,7 +1050,9 @@ nav {
   .work-sec .work-btn {
     gap: 15px;
   }
-
+  .email-icon{
+    left: 78%;
+  }
   .work-sec .started-btn {
     padding: 10px 24px;
     font-size: 14px;
@@ -1033,7 +1086,15 @@ nav {
     font-size: 40px;
     text-align: center;
   }
-
+  .footer-link-cont{
+    margin: 0 auto;
+  }
+   .footer-link-cont>ul>li{
+    margin: 0 auto;
+  }
+  .footer-link-header{
+    margin: 0 auto ;
+  }
   .banner-cont > p {
     font-size: 15px;
     line-height: 1.6;
@@ -1064,6 +1125,9 @@ nav {
   .checkbox-cont{
     justify-content: center;
   }
+  .title5{
+    font-size: 70px;
+  }
 }
 @media screen and (max-width:576px) {
    .work-sec .title4 {
@@ -1081,7 +1145,9 @@ nav {
   .work-sec p {
     font-size: 14px;
   }
-
+  .title5{
+    font-size: 50px;
+  }
   .work-sec .started-btn {
     padding: 10px 20px;
     font-size: 13px;
@@ -1125,7 +1191,9 @@ nav {
     font-size: 14px;
     margin: 20px 0;
   }
-
+  .title5{
+    font-size: 40px;
+  }
   .home-btn {
     font-size: 15px;
     padding: 12px 24px;

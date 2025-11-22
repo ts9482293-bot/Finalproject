@@ -516,6 +516,19 @@ nav {
 .footer-link:hover{
     color: var(--primary-color);
 }
+.footer-link-header{
+  max-width: 103px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>li{
+  max-width: 150px;
+  margin: 0 auto;
+}
+.footer-link-cont>ul>{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .footer-icon{
     margin-right: 17px;
 }
@@ -789,7 +802,12 @@ nav{
 .title1 {
     font-size: 60px;
   }
-  
+   .footer-link-cont>ul>li{
+    margin: 0;
+   }
+   .footer-link-header{
+    margin: 0;
+   }
 }
 @media (max-width: 992px) {
   .services-sec .row {
@@ -1026,7 +1044,12 @@ nav{
     font-size: 14px;
     padding: 10px 20px;
   }
-
+  .footer-link-header{
+    margin: 0 auto;
+  }
+  .footer-link-cont>ul>li{
+    margin: 0 auto;
+  }
   .about-sec .about-img img {
     width: 100%;
   }

@@ -417,7 +417,7 @@ animation: waveFloat 5s ease-in-out infinite;
 /* about-sec */
 .about-sec{
     /* background: radial-gradient(circle at top left, #9328F2 0%, #2a166a 25%, #0b022d 100%) ; */
-    padding: 26px;
+    padding: 56px 0;
     background: #2a166a;
 }
 .about-cont>.title4{
@@ -708,7 +708,7 @@ animation: waveFloat 5s ease-in-out infinite;
 .work-sec{
   background: url(../images/07.png)no-repeat center/cover;
   min-height: 100vh;
-  padding: 26px 0;
+  padding: 56px 0;
 }
 .work-header{
     text-align: center;
@@ -813,7 +813,7 @@ animation: waveFloat 5s ease-in-out infinite;
 /* us-sec */
 .us-sec{
     background: var(--background-color);
-    padding: 26px 0;
+    padding: 56px 0;
 }
 
 .view-btn{
@@ -960,7 +960,7 @@ animation: waveFloat 5s ease-in-out infinite;
 /* testimonial-sec */
 .testimonial-sec{
     background: var(--background-color);
-    padding: 26px 0;
+    padding: 56px 0;
 }
 .testimonial-swiper{
     height: 130vh;
@@ -1120,7 +1120,7 @@ animation: waveFloat 5s ease-in-out infinite;
 /* faq-sec */
 .faq-sec{
     background: var(--background-color);
-    padding: 26px 0;
+    padding: 50px 0;
 }
 .faq-header>.title4{
     color: var(--text-color);
@@ -1145,7 +1145,7 @@ animation: waveFloat 5s ease-in-out infinite;
     color: var(--text-color);
 }
 .accordion-item{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     background: var(--crd-color) !important;
     color: var(--text-color);
     border-bottom:  none !important;

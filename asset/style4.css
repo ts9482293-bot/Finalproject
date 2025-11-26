@@ -316,7 +316,7 @@ nav {
 }
 .grid-item {
   border-radius: 10px;
-   width: 50%;
+   width: 49%;
   padding: 0 15px;
   margin: 10px  auto ;
 }
@@ -663,6 +663,9 @@ nav {
    }
    .footer-link-header{
     margin: 0;
+   }
+   .banner-cont{
+    text-align: center;
    }
 }
 @media screen and (max-width: 992px) {

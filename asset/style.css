@@ -351,6 +351,10 @@ animation: waveFloat 5s ease-in-out infinite;
   display: flex;
   align-items: center;
 } */
+ .customer-cont{
+  display: flex;
+  justify-content: center;
+ }
 .customer-cont>p{
     font-size: 24px;
     font-weight: 300;
@@ -1523,6 +1527,9 @@ animation: waveFloat 5s ease-in-out infinite;
     }
     .email-icon{
       left: 83%;
+    }
+    .title5{
+      font-size: 100px;
     }
 }
 @media screen and (max-width:1199px){

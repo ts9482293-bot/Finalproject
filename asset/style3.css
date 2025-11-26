@@ -214,7 +214,7 @@ nav {
 /* banner-sec */
 .banner-sec{
     background: url(../image3/mask\ group\ new.png)no-repeat center/cover;
-    min-height: 90vh;
+    min-height: 100vh;
     background-color: var(--background-color);
    overflow: hidden;
    width: 100%;
@@ -232,7 +232,7 @@ nav {
   background-clip: text;;
 }
 .banner-btn{
-   margin: 302px 0 302px;
+   margin: 270px 0 270px;
    text-align: center;
 }
 .home-btn{
@@ -698,6 +698,12 @@ nav{
 @media screen and (max-width:1290px){
     .email{
       max-width: 300px;
+    }
+    .work-header>.title4::before{
+      right: 61%;
+    }
+    .title5{
+      font-size: 100px;
     }
   }
 @media screen and (max-width: 1199px) {

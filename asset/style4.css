@@ -550,6 +550,17 @@ nav {
   .about-img {
     margin: 10px auto;
   }
+  .email{
+    max-width: 300px;
+  }
+}
+@media screen and (max-width:1300px){
+  .work-header>.title4::before{
+    right: 66%;
+  }
+  .email{
+    max-width: 280px;
+  }
 }
 @media screen and (max-width: 1199px) {
   .offcanvas {
@@ -667,10 +678,13 @@ nav {
    .banner-cont{
     text-align: center;
    }
+   .email-icon{
+    left: 66%;
+   }
 }
 @media screen and (max-width: 992px) {
   .email-icon {
-    left: 70%;
+    left: 66%;
   }
   .grid-item{
     width: 100%;
@@ -684,11 +698,12 @@ nav {
   .grid-item{
     margin: 2%;
   }
+  .email-icon{
+    left: ;
+  }
 }
 @media screen and (max-width: 880px) {
-  .email-icon {
-    left: 71%;
-  }
+ 
 }
 @media screen and (max-width: 768px) {
   .email-icon {

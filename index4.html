@@ -80,8 +80,15 @@
               </li>
             </ul>
             <div class="nav-btn">
-              <a href="" class="primary-btn">Login</a>
-              <a href="" class="secondary-btn">Sing Up</a>
+               <div class="nav-btn">
+             <!-- Button trigger modal -->
+<button type="button" class=" primary-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Login
+</button>
+<!-- Button trigger modal -->
+<button type="button" class=" secondary-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Sing Up
+</button>
             </div>
           </div>
         </div>
@@ -994,6 +1001,80 @@
   </div>
       </div>
     </footer>
+      <!-- Modal -->
+<div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+       <div class="modal-close">
+      <div class="modal-logo">
+        <a href=""><img src="./images/image 1 (2).png" alt=""></a>
+      </div>
+        <button type="button" class="btn-close btn-close-white " data-bs-dismiss="modal" aria-label="Close"></button>
+  </div>
+      <div class="modal-cont">
+        <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Welcome Back!</h1>
+      </div>
+      <div class="modal-body">
+        to keep connected with us
+          please login with your personal info
+      </div>
+      <div class="modal-footer">
+        <button type="button" class=" log-btn login-btn rounded-pill"><span>Login</span></button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-box">
+       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-cont">
+        <div class="modal-img">
+        <a href=""><img src="./images/modal.png" alt=""></a>
+      </div>
+      <div class="modal-header">
+        <h1 class=" modal-sub fs-5" id="staticBackdropLabel">or use your email for registration</h1>
+      </div>
+      <div class="modal-body">
+        <form action="" class="modal-form">
+          <div class="row">
+            <div class="col-12">
+              <div class="input-group mb-3">
+                 <span class="input-group-text bg-transparent border-0 text-white">
+                  <i class="fa-regular fa-user"></i>
+                 </span>
+                 <input type="text" class="form-control bg-transparent text-white" placeholder="Name">
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="input-group mb-3">
+               <span class="input-group-text bg-transparent border-0 text-white">
+                 <i class="fa-regular fa-envelope"></i>
+              </span>
+               <input type="email" class="form-control bg-transparent text-white" placeholder="Email">
+            </div>
+            </div>
+            <div class="col-12">
+              <div class="input-group mb-3">
+                <span class="input-group-text bg-transparent border-0 text-white">
+               <i class="fa-solid fa-lock"></i>
+            </span>
+           <input type="password" class="form-control bg-transparent text-white" placeholder="Password">
+         </div>
+            </div>
+            <div class="col-12">
+               <button type="button" class=" modal-sing-btn  Sing-btn"><span>Sing Up</span></button>
+            </div>
+          </div>
+        </form>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
      <!-- Aos-js -->
      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- isotop-js -->

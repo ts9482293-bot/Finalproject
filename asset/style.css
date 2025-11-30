@@ -318,7 +318,6 @@ nav{
 }
 .login-btn:hover::before{
   left: 0;
-  color: var(--text-color);
 } 
 body.modal-open {
   overflow-y: hidden !important;
@@ -341,7 +340,35 @@ body.modal-open {
 .Sing-btn{
   background:var(--btn-color) !important ;
   border-radius: 37px !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  padding: 16px 29px;
   color: var(--text-color);
+  border: none;
+  outline: none;
+}
+.Sing-btn::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background: var(--text-color);
+  z-index: 1;
+  color: var(--btn-color);
+  transition: 0.4s all linear;
+}
+.Sing-btn>span{
+  position: relative;
+  z-index: 2;
+}
+.Sing-btn:hover::before{
+  left: 0;
+}
+.modal-sing-btn:hover{
+  color: var(--btn-color);
 }
 .input-group{
   outline: 1px solid var(--text-color);
